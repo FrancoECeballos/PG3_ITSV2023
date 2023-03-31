@@ -56,3 +56,26 @@ class Triangulo():
 triangulo1 = Triangulo(int(input("Introduce el lado 1: ")), int(input("Introduce el lado 2: ")), int(input("Introduce el lado 3: ")))
 triangulo1.ladoMayor()
 triangulo1.tipoTriangulo()
+
+print("Ejercício 4: \n")
+
+class Operaciones():
+    def __init__(self,num1,num2):
+        self.num1 = num1
+        self.num2 = num2
+        self.suma()
+        self.resta()
+        self.multiplicacion()
+        self.division()
+    def suma(self):
+        print("\nLa suma de sus números es", self.num1 + self.num2)
+    def resta(self):
+        print("\nLa resta de sus números es", self.num1 - self.num2)
+    def multiplicacion(self):
+        print("\nLa multiplicación de sus números es", self.num1 * self.num2)
+    def division(self):
+        print("\nLa división de sus números es", self.num1 / self.num2)
+
+operacion = Operaciones(int(input("Introduce el primer número: ")), int(input("Introduce el segundo número: ")))
+
+        
