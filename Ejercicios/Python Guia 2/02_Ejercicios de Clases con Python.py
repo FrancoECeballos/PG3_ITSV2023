@@ -74,7 +74,7 @@ class Operaciones():
     def multiplicacion(self):
         print("\nLa multiplicación de sus números es", self.num1 * self.num2)
     def division(self):
-        print("\nLa división de sus números es", self.num1 / self.num2)
+        print("\nLa división de sus números es", self.num1 / self.num2, "\n")
 
 operacion = Operaciones(int(input("Introduce el primer número: ")), int(input("Introduce el segundo número: ")))
 
@@ -103,9 +103,9 @@ e1.setEdad(e1, int(input("Introduce la edad de tu empleado: ")))
 e1.setSalario(e1, int(input("Introduce el salario de tu empleado: ")))
 
 if e1.salario >= 3000:
-    print("\nNombre:", e1.nombre, "\nEdad:", e1.edad, "\nSalario:", e1.salario, "\nDebe pagar impuestos.")
+    print("\nNombre:", e1.nombre, "\nEdad:", e1.edad, "\nSalario:", e1.salario, "\nDebe pagar impuestos.\n")
 else:
-    print("\nNombre:", e1.nombre, "\nEdad:", e1.edad, "\nSalario:", e1.salario, "\nNo debe pagar impuestos.")
+    print("\nNombre:", e1.nombre, "\nEdad:", e1.edad, "\nSalario:", e1.salario, "\nNo debe pagar impuestos.\n")
 
 print("Ejercicio 6: \n")
 
