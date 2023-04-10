@@ -107,4 +107,31 @@ if e1.salario >= 3000:
 else:
     print("\nNombre:", e1.nombre, "\nEdad:", e1.edad, "\nSalario:", e1.salario, "\nNo debe pagar impuestos.")
 
+print("Ejercicio 6: \n")
+
+listaHijos = []
+
+class Familia():
+    def __init__(self, padre:str, madre:str, hijos:list):
+        self.padre = padre
+        self.madre = madre 
+        self.hijos = hijos
+    def  __str__(self):
+        return f'''
+        Familia:
+        Madre: {self.madre}
+        Padre: {self.padre}
+        Hijos: {self.hijos}
+        '''
+
+numHijos = int(input("Introduce el número de hijos: "))
+
+for i in range(numHijos):
+    hijo = input(f"Introduce el nombre del hijo N° {i+1} : ")
+    listaHijos.append(hijo)
+f1 = Familia("Marta", "Carlos", listaHijos)
+
+print(f1)
+
+
         
