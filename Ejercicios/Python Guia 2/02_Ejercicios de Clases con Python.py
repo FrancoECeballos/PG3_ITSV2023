@@ -78,4 +78,33 @@ class Operaciones():
 
 operacion = Operaciones(int(input("Introduce el primer número: ")), int(input("Introduce el segundo número: ")))
 
+print("Ejercício 5: \n")
+
+class Persona():
+    def setNombre(self, nombre):
+        self.nombre = nombre
+    def setEdad(self, edad):
+        self.edad = edad
+
+class Empleado(Persona):
+    def setSalario(self, salario):
+        self.salario = salario
+
+
+p1 = Persona
+p1.setNombre(p1, input("Introduce tu nombre: "))
+p1.setEdad(p1, int(input("Introduce tu edad: ")))
+
+print("\nNombre:", p1.nombre, "\nEdad:", p1.edad, "\n")
+
+e1 = Empleado
+e1.setNombre(e1, input("Introduce el nombre de tu empleado: "))
+e1.setEdad(e1, int(input("Introduce la edad de tu empleado: ")))
+e1.setSalario(e1, int(input("Introduce el salario de tu empleado: ")))
+
+if e1.salario >= 3000:
+    print("\nNombre:", e1.nombre, "\nEdad:", e1.edad, "\nSalario:", e1.salario, "\nDebe pagar impuestos.")
+else:
+    print("\nNombre:", e1.nombre, "\nEdad:", e1.edad, "\nSalario:", e1.salario, "\nNo debe pagar impuestos.")
+
         
