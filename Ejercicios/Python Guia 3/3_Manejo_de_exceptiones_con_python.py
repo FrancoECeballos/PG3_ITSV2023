@@ -13,7 +13,7 @@ while True:
         if continuar=="N" or continuar=="n":
             break
 
-print("\nEjercicio N°2: \n")
+print("\nEjercicio N°2 y N°4: \n")
 
 while True:
     try:
@@ -29,3 +29,13 @@ while True:
         continuar=input("¿Desea continuar? Si desea detener el programa, ingrese 'N': \n")
         if continuar=="N" or continuar=="n":
             break
+
+print("\nEjercicio N°3: \n")
+
+meses = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"]
+
+try:
+    mes = int(input("Ingrese el número del mes: "))
+    print("\nEl mes ingresado es: ", meses[mes-1])
+except IndexError:
+    print("Hubo un error en el ingreso de datos. El mes ingresado no existe.")
